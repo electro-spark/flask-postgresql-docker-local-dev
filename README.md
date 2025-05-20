@@ -74,7 +74,7 @@ sudo ./stop.sh
 ``
 (if Docker is not setup with non-root access).
 
-## 7. REMOVE ALL LOCAL DOCKER CONTAINERS AND IMAGES
+### 7. REMOVE ALL LOCAL DOCKER CONTAINERS AND IMAGES
 ``
 ./clean.sh
 ``
