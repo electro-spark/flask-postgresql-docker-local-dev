@@ -1,0 +1,52 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 1s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - db_data:/var/lib/pgsql/data
+    networks:
+      - backnet
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    expose:
+      - 3306
+      - 33060
+
+  backend:
+    build:
+      context: backend
+      target: builder
+    restart: always
+    volumes:
+      - ./backend/app:/app
+    ports:
+      - 8000:8000
+    networks:
+      - backnet
+      - frontnet
+    depends_on:
+      db:
+        condition: service_healthy
+
+  proxy:
+    build: proxy
+    restart: always
+    ports:
+      - 80:80
+    depends_on: 
+      - backend
+    networks:
+      - frontnet
+
+volumes:
+  db_data:
+
+networks:
+  backnet:
+  frontnet:

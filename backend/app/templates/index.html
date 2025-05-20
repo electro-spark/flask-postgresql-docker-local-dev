@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blog posts</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="main">
+            <div>
+                <h3>Blog posts</h3>
+            </div>
+            <div class="column">
+                <table class="blogs-table">
+                    <tr class="blogs-header">
+                        <th class="blogs-header">Name</th>
+                        <th class="blogs-header">Id</th>
+                    </tr>
+                    {% for blog in blogs %}
+                    <tr>
+                        <td>{{ blog['name'] }}</td>
+                        <td>{{ blog['id'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

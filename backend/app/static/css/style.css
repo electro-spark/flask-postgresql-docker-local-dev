@@ -1,0 +1,29 @@
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blogs-header {
+  background-color: #8FBC8F;
+  border-color: #8FBC8F;
+  border: 1px;
+  text-align: left;
+}
+
+.blogs-table {
+  border: 1px solid;
+  border-collapse: collapse;
+  min-width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
