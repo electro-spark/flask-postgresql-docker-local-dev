@@ -3,23 +3,27 @@ Local development setup for Flask and PostgreSQL running in Docker.
 
 It should be used solely for local development, as it is not configured for production (the database has the authentication disabled, Flask is run with local development server etc.).
 
-## 1. Prerequisites
-### a) Linux distro / Mac OS with Docker and git installed.
+### 1. PREREQUISITES
 
-### b) Clone repository and change dir to repository root directory:
+**Linux distro / Mac OS with Docker and git installed.**
+
+**Clone repository and change dir to repository root directory:**
 
 ``
 git clone git@github.com:electro-spark/flask-postgresql-docker-local-dev.git
+``
+
+``
 cd flask-postgresql-docker-local-dev
 ``
 
-### c) Make sure all scripts are set as executable:
+**Make sure all scripts are set as executable:**
 
 ``
 chmod u+x ./start.sh ./be_logs.sh ./be_shell.sh ./stop.sh ./clean.sh
 ``
 
-## 2. Start application
+### 2. START APPLICATION
 ``
 ./start.sh
 ``
@@ -31,10 +35,10 @@ sudo ./start.sh
 ``
 (if Docker is not setup with non-root access).
 
-## 3. Access website
+### 3. ACCESS WEBSITE
 Point the browser to `localhost`.
 
-## 4. View application container logs
+### 4. VIEW APPLICATION CONTAINER LOGS
 ``
 ./be_logs.sh
 ``
@@ -46,7 +50,7 @@ sudo ./be_logs.sh
 ``
 (if Docker is not setup with non-root access).
 
-## 5. Access application container shell
+### 5. ACCESS APPLICATION CONTAINER SHELL
 ``
 ./be_shell.sh
 ``
@@ -58,7 +62,7 @@ sudo ./be_shell.sh
 ``
 (if Docker is not setup with non-root access).
 
-## 6. Stop application
+### 6. STOP APPLICATION
 ``
 ./stop.sh
 ``
@@ -70,7 +74,7 @@ sudo ./stop.sh
 ``
 (if Docker is not setup with non-root access).
 
-## 7. Remove all local Docker images and containers
+## 7. REMOVE ALL LOCAL DOCKER CONTAINERS AND IMAGES
 ``
 ./clean.sh
 ``
