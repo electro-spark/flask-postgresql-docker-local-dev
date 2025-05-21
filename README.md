@@ -1,7 +1,7 @@
 # flask-postgresql-docker-local-dev
-Local development setup for Flask and PostgreSQL running in Docker.
+**Local development setup for Flask and PostgreSQL running in Docker.**
 
-It should be used solely for local development, as it is not configured for production (the database has the authentication disabled, Flask is run with local development server etc.).
+❗ It should be used solely for local development, as it is not configured for production (the database has the authentication disabled, Flask is run with local development server etc.).
 
 ### 1. PREREQUISITES
 
