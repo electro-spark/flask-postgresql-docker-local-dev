@@ -10,7 +10,7 @@ It should be used solely for local development, as it is not configured for prod
 **Clone repository and change dir to repository root directory:**
 
 ``
-git clone git@github.com:electro-spark/flask-postgresql-docker-local-dev.git
+git clone https://github.com/electro-spark/flask-postgresql-docker-local-dev.git
 ``
 
 ``
