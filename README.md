@@ -30,7 +30,7 @@ chmod u+x ./start.sh ./be_logs.sh ./be_shell.sh ./stop.sh ./clean.sh
 
 # Usage
 
-### 🔨 START APPLICATION
+### 🔨 Start application
 ``
 ./start.sh
 ``
@@ -42,10 +42,10 @@ sudo ./start.sh
 ``
 (if Docker is not setup with non-root access).
 
-### 🔨 ACCESS WEBSITE
+### 🔨 Access website
 Point the browser to `localhost`.
 
-### 🔨 VIEW APPLICATION CONTAINER LOGS
+### 🔨 View application container logs
 ``
 ./be_logs.sh
 ``
@@ -57,7 +57,7 @@ sudo ./be_logs.sh
 ``
 (if Docker is not setup with non-root access).
 
-### 🔨 ACCESS APPLICATION CONTAINER SHELL
+### 🔨 Access application container shell
 ``
 ./be_shell.sh
 ``
@@ -69,7 +69,7 @@ sudo ./be_shell.sh
 ``
 (if Docker is not setup with non-root access).
 
-### 🔨 STOP APPLICATION
+### 🔨 Stop application
 ``
 ./stop.sh
 ``
@@ -81,7 +81,7 @@ sudo ./stop.sh
 ``
 (if Docker is not setup with non-root access).
 
-### 🔨 REMOVE ALL LOCAL DOCKER CONTAINERS AND IMAGES
+### 🔨 Remove all local docker containers and images
 ``
 ./clean.sh
 ``
