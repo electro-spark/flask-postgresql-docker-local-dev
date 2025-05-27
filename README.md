@@ -25,7 +25,7 @@ cd flask-postgresql-docker-local-dev
 **Make sure all scripts are set as executable:**
 
 ``
-chmod u+x ./start.sh ./be_logs.sh ./be_shell.sh ./stop.sh ./clean.sh
+chmod u+x ./*.sh
 ``
 
 # Usage
