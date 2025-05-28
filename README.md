@@ -6,7 +6,7 @@
 # Features
 **✓ Consistent development environment.**
 
-**✓ Changes of the Flask project files on host machine, are automatically propagated into the cointainer.**
+**✓ Changes to the Flask project files on host machine, are automatically propagated into the cointainer.**
 
 # Prerequisites
 
